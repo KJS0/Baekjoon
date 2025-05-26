@@ -7,5 +7,15 @@ using namespace std;
 
 int main() {
     FASTIO
-    // Code Here...
+    int N;
+    cin >> N;
+
+    string nums;
+    cin >> nums;
+
+    int ans = 0;
+    for (const auto& ch : nums) {
+        ans += ch - '0';
+    }
+    cout << ans << endl;
 }

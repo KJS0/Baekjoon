@@ -7,5 +7,7 @@ using namespace std;
 
 int main() {
     FASTIO
-    // Code Here...
+    ll A, B;
+    cin >> A >> B;
+    cout << (A + B) * (A - B) << endl;
 }
