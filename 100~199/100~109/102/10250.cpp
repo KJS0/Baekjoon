@@ -8,8 +8,13 @@ using namespace std;
 int main() {
     FASTIO
     int T = 1;
-    //cin >> T;
+    cin >> T;
+
     while (T--) {
-        // Code Here...
+        int H, W, N;
+        cin >> H >> W >> N;
+
+        int ans = ((N - 1) % H + 1) * 100 + ((N - 1) / H + 1);
+        cout << ans << endl;
     }
 }

@@ -7,9 +7,10 @@ using namespace std;
 
 int main() {
     FASTIO
-    int T = 1;
-    //cin >> T;
-    while (T--) {
-        // Code Here...
-    }
+    int H, M;
+    cin >> H >> M;
+
+    int time = H * 60 + M - 45;
+    if (time < 0) time += 24 * 60;
+    cout << time / 60 << ' ' << time % 60 << endl;
 }

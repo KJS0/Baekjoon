@@ -1,4 +1,5 @@
 #include <iostream>
+#include <set>
 #define all(v) (v).begin(), (v).end()
 #define endl '\n'
 #define FASTIO cin.tie(nullptr); ios::sync_with_stdio(false);
@@ -10,6 +11,12 @@ int main() {
     int T = 1;
     //cin >> T;
     while (T--) {
-        // Code Here...
+        set<int> S;
+        for (int i = 1; i <= 10; i++) {
+            int num;
+            cin >> num;
+            S.insert(num % 42);
+        }
+        cout << S.size() << endl;
     }
 }

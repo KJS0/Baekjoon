@@ -8,8 +8,17 @@ using namespace std;
 int main() {
     FASTIO
     int T = 1;
-    //cin >> T;
+    cin >> T;
     while (T--) {
-        // Code Here...
+        int R;
+        string S;
+        cin >> R >> S;
+
+        for (const auto& ch : S) {
+            for (int i = 1; i <= R; i++) {
+                cout << ch;
+            }
+        }
+        cout << endl;
     }
 }
