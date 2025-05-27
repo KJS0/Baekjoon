@@ -2,10 +2,15 @@
 #define all(v) (v).begin(), (v).end()
 #define endl '\n'
 #define FASTIO cin.tie(nullptr); ios::sync_with_stdio(false);
-using ll = long long;
 using namespace std;
 
 int main() {
     FASTIO
-    // Code Here...
+    int num, ans = 0;
+    for (int i = 1; i <= 5; i++) {
+        cin >> num;
+        ans += num * num;
+    }
+    ans %= 10;
+    cout << ans << endl;
 }
